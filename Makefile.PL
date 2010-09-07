@@ -29,7 +29,7 @@ my %WriteMakefileArgs = (
     'File::Which' => '0',
     'XSLoader' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }
