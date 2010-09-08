@@ -6,7 +6,7 @@ BEGIN {
   $Devel::bt::AUTHORITY = 'cpan:FLORA';
 }
 BEGIN {
-  $Devel::bt::VERSION = '0.03';
+  $Devel::bt::VERSION = '0.04';
 }
 # ABSTRACT: Automatic gdb backtraces on errors
 
