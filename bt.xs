@@ -2,6 +2,10 @@
 #include "perl.h"
 #include "XSUB.h"
 
+#ifndef PERL_UNUSED_ARG
+# define PERL_UNUSED_ARG(x) ((void)x)
+#endif
+
 static int signals[] = {
     SIGILL,
     SIGFPE,
@@ -180,7 +184,7 @@ backtrace ()
 }
 
 static void
-sighandler (int sig) {
+signal_handler (int sig) {
     PERL_UNUSED_ARG(sig);
     register_sighandler(SIG_DFL);
     backtrace();
@@ -192,7 +196,7 @@ register_segv_handler (char *gdb, char *perl)
 {
     strncpy(gdb_path, gdb, sizeof(gdb_path));
     strncpy(perl_path, perl, sizeof(perl_path));
-    register_sighandler(sighandler);
+    register_sighandler(signal_handler);
 }
 
 MODULE = Devel::bt  PACKAGE = Devel::bt
