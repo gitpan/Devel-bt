@@ -5,8 +5,8 @@ package Devel::bt;
 BEGIN {
   $Devel::bt::AUTHORITY = 'cpan:FLORA';
 }
-BEGIN {
-  $Devel::bt::VERSION = '0.05';
+{
+  $Devel::bt::VERSION = '0.06';
 }
 # ABSTRACT: Automatic gdb backtraces on errors
 
@@ -192,7 +192,7 @@ Florian Ragwitz <rafl@debian.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by Florian Ragwitz.
+This software is Copyright (c) 2012 by Florian Ragwitz.
 
 This is free software, licensed under:
 

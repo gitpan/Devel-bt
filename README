@@ -1,11 +1,11 @@
 
 
 This archive contains the distribution Devel-bt,
-version 0.05:
+version 0.06:
 
   Automatic gdb backtraces on errors
 
-This software is Copyright (c) 2010 by Florian Ragwitz.
+This software is Copyright (c) 2012 by Florian Ragwitz.
 
 This is free software, licensed under:
 
